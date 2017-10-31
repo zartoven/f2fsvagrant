@@ -1,0 +1,15 @@
+set visualbell
+set nobackup
+set cindent
+set autoindent
+set smartindent
+set enc=euc-kr
+set incsearch
+set nu
+syntax on
+set background=dark
+set backspace=eol,start,indent
+set history=1000
+set hlsearch
+"set ignorecase
+set showmatch
