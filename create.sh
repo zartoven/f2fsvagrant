@@ -6,10 +6,10 @@ if [[ $VBGUEST"X" == "X" ]]; then
 	vagrant plugin install vagrant-vbguest
 fi
 
-VBOX_ADDON_FILE=VBoxGuestAdditions_5.2.1-118447.iso
+VBOX_ADDON_FILE=VBoxGuestAdditions_5.2.7-120326.iso
 
-if [ ! -e VBoxGuestAdditions_5.2.1-118447.iso ]; then
-  wget https://www.virtualbox.org/download/testcase/VBoxGuestAdditions_5.2.1-118447.iso
+if [ ! -e $VBOX_ADDON_FILE ]; then
+  wget https://www.virtualbox.org/download/testcase/$VBOX_ADDON_FILE
 fi
 
 if [ $# -ne 3 ]; then
